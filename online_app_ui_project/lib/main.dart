@@ -49,8 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [SizedBox(height: 20,),
-              Text('Online', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.white),),
-              Text('Master Class', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white),),
+              Text('Online', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26, color: Colors.white,fontFamily: 'Roboto'),),
+              Text('Master Class', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white,fontFamily: 'Roboto'),),
             ],
                   ),
           ),
