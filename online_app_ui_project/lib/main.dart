@@ -86,11 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         const SizedBox(height: 16),
                         const Padding(
                           padding: EdgeInsets.only(top: 16, left: 10),
-                          child: Text('UI/UX Designer', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
+                          child: Text('UI/UX DESIGNER', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
                         ),
                          const Padding(
                           padding: EdgeInsets.only(top: 2, left: 10),
-                          child: Text('Beginner', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
+                          child: Text('BEGINNER', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
                         ),
                       ],
                     ),
@@ -108,13 +108,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(width: 26),
                 Stack(
                   children: [
-                    Container( //violet edge box
+                    Container( //orange edge box
                     height: 349,
                     width: 246, 
                     decoration:  BoxDecoration(gradient: const LinearGradient(colors: [
-                      Color(0xff9288E4),
-                      Color(0xff534EA7)
-                    ], begin: Alignment(0, -1), end: Alignment(0, 0)), borderRadius: BorderRadius.circular(22)),
+                      Color(0xffF4C465),
+                      Color(0xffC63956)
+                    ], begin: Alignment(0, -1), end: Alignment(0, 1.5)), borderRadius: BorderRadius.circular(22)),
                     child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -123,33 +123,34 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Container(
                             height: 39,
                             width: 135,
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(36), color:const Color(0xffAFA8EE) ),
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(36), color:const Color(0xffF4C67A) ),
                             child: const Padding(
                               padding: EdgeInsets.all(10),
-                              child: Center(child: Text('Recommended',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white),)),
+                              child: Center(child: Text('NEW CLASS',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white, fontWeight: FontWeight.bold),)),
                             ),
                           ),
                         ),
                         const SizedBox(height: 16),
                         const Padding(
                           padding: EdgeInsets.only(top: 16, left: 10),
-                          child: Text('UI/UX Designer', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
+                          child: Text('GRAPHIC DESIGN', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
                         ),
                          const Padding(
                           padding: EdgeInsets.only(top: 2, left: 10),
-                          child: Text('Beginner', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
+                          child: Text('Master', style: TextStyle(fontFamily: 'Roboto', fontSize: 25, fontWeight: FontWeight.bold, color: Colors.white)),
                         ),
                       ],
                     ),
                   ),
                   Positioned(
-                    top: 70,
-                    left: 40,child: Stack(children: [
+                    top: 100,
+                    left: 25,
+                    child: Stack(children: [
                       Positioned(
-                        top: 121,
-                        left: 60,
-                        child: Image.asset('assets/images/Ellipse 1.png')),
-                      Image.asset('assets/images/Saly-10.png')]),
+                        top: 84,
+                        left: 82,
+                        child: Image.asset('assets/images/Ellipse 2.png', height: 165)),
+                      Image.asset('assets/images/Saly-36.png')]),
                   ),]
                 ),
               ],
