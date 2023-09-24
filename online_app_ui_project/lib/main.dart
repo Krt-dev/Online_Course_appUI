@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_app_ui_project/next2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,9 +83,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                 height: 39,
                                 width: 135,
                                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(36), color:const Color(0xffAFA8EE) ),
-                                child: const Padding(
-                                  padding: EdgeInsets.all(10),
-                                  child: Center(child: Text('Recommended',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white),)),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: InkWell(child: const Center(child: Text('Recommended',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white),)),onTap: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => const PageTwo()));
+                                  },),
                                 ),
                               ),
                             ),
@@ -129,9 +132,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                 height: 39,
                                 width: 135,
                                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(36), color:const Color(0xffF4C67A) ),
-                                child: const Padding(
+                                child: Padding(
                                   padding: EdgeInsets.all(10),
-                                  child: Center(child: Text('NEW CLASS',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white, fontWeight: FontWeight.bold),)),
+                                  child: Center(child: InkWell(child: Text('NEW CLASS',style: TextStyle(fontSize: 16, fontFamily: 'Roboto',color: Colors.white, fontWeight: FontWeight.bold),), onTap: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => const PageTwo()));
+                                  },)),
                                 ),
                               ),
                             ),
@@ -247,7 +252,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ]
             ),
             Stack(
-              children:[ const SizedBox(height:127, width: 400,),
+              children:[ const SizedBox(height:130, width: 400,),
               Padding(
                 padding: const EdgeInsets.only(top: 30,left: 17),
                 child: Container(//faded violet box
@@ -259,8 +264,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Flutter Developer', style: TextStyle(color:Colors.white, fontSize: 18, fontWeight: FontWeight.w500,fontFamily: 'Roboto')),
-                        const Text('8 Hours',style: TextStyle(fontSize: 12,color: Color(0xff9C9A9A),fontFamily: 'Roboto'),),
+                        const Text('Full Stack Java Script', style: TextStyle(color:Colors.white, fontSize: 18, fontWeight: FontWeight.w500,fontFamily: 'Roboto')),
+                        const Text('6 Hours',style: TextStyle(fontSize: 12,color: Color(0xff9C9A9A),fontFamily: 'Roboto'),),
                         const SizedBox(height: 3),
                         Row(
                           children: [
@@ -302,14 +307,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   height:84,
                   width: 117,
-                 decoration: BoxDecoration(color: const Color(0xffFFB4B4), borderRadius: BorderRadius.circular(9)),
+                 decoration: BoxDecoration(color: const Color(0xffCCB4FF), borderRadius: BorderRadius.circular(9)),
                 
                 ),
               ),
               Positioned( //phone image
-                left: 39,
-                bottom: 26,
-                child: Image.asset('assets/images/Saly-24.png')),
+                left: 30,
+                bottom: 8,
+                child: Image.asset('assets/images/Saly-13.png')),
               Positioned( //pink circle
                 right: 9,
                 bottom: 39,
